@@ -4,11 +4,23 @@
 
 本專案為Scrapy網頁爬蟲框架的教學系列範例程式碼，以[INSIDE硬塞的網路趨勢觀察網站－AI新聞](https://www.inside.com.tw/tag/ai)網頁為例，來分享Scrapy網頁爬蟲框架的常見應用，可以搭配以下的部落格文章來進行學習：
 
-* [[Scrapy教學1]快速入門Scrapy框架的5個執行模組及架構](https://www.learncodewithmike.com/2020/12/python-scrapy-architecture.html)
+- [x] [[Scrapy教學1]快速入門Scrapy框架的5個執行模組及架構](https://www.learncodewithmike.com/2020/12/python-scrapy-architecture.html)
+  - scrapy的框架在透過實際使用後會比較能了解，但是不了解也沒關係，因為會經常撰寫的只有spiders主程式的部分
+  - 本教程假設學員已熟悉BeautifulSoup、Selenium等爬蟲工具
+  - Downloader下載下來的是網頁的HTML原始碼
 
-* [[Scrapy教學2]實用的Scrapy框架安裝指南，開始你的第一個專案](https://www.learncodewithmike.com/2020/12/scrapy-installation.html)
+- [x] [[Scrapy教學2]實用的Scrapy框架安裝指南，開始你的第一個專案](https://www.learncodewithmike.com/2020/12/scrapy-installation.html)
+  <pre><code>$ pip install scrapy
+  $ scrapy bench
+  
+  $ scrapy startproject 你的專案名稱 .
+  $ cd 專案
+  $ scrapy genspider 網頁爬蟲檔案名稱 目標網站的網域名稱
+  </pre></code>
 
-* [[Scrapy教學3]如何有效利用Scrapy框架建立網頁爬蟲看這篇就懂](https://www.learncodewithmike.com/2021/01/scrapy-create-spider.html)
+- [x] [[Scrapy教學3]如何有效利用Scrapy框架建立網頁爬蟲看這篇就懂](https://www.learncodewithmike.com/2021/01/scrapy-create-spider.html)
+  - start_urls可以是想要爬取的一至多個網頁網址清單
+  - HTML原始碼，在使用BeautifulSoup後，可以有效的提取某些HTML資訊
 
 * [[Scrapy教學4]掌握Scrapy框架重要的CSS定位元素方法](https://www.learncodewithmike.com/2021/01/scrapy-css-selectors.html)
 
